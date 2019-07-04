@@ -1,3 +1,5 @@
+near figure 3.7 lists useful Ruby methods
+
 readme.txt 
 assignment 1
 
@@ -54,6 +56,16 @@ After call to analyzeFile the hash in @counts should contain
 Hint:  use the Ruby method IO.foreach
 and use the string method chomp! to process each line 
 from the file.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    words = IO.read("file")
+      split(/\W+/).
+      select { |s| s =~ /^[aeiou]/i }.
+    
+    map { |s| s.downcase }. #shortcut: map(&:downcase)
+      uniq.
+      sort
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 sortByCountDecreasing converts the hash to an array 
 and sort the array in decreasing count sequence

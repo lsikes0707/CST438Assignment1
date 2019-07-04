@@ -1,5 +1,7 @@
+# Lacey Sikes
+# CST 438 Assignment 1
+# June 29th, 2019
 class CountLetters 
-
   # define an instance variable containing empty hash with key being the letter
   #  and value being the count of occurrences of the letter
   #  use Hash.new(0) to create empty hash table
@@ -14,9 +16,11 @@ class CountLetters
   
 
   # given a filename, read the file and for each letter update the hash table  
-  def analyzeFile(file) 
-  
+  def analyzeFile(file)
+   letters = IO.read(file)
+   IO.foreach |m|
    
+   {"A"=>1, "B"=>4, "C"=>2, "K"=>1, "D"=>1}
   end  
   
   # return an array of lists  
